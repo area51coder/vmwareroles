@@ -1,8 +1,4 @@
 ---
-- name: Sock tunnel setup
-  hosts: "{{ list_host }}"
-  gather_facts: false
-
   tasks:
   - name: Delete Vms
     vmware_guest:
