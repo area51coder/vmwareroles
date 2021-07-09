@@ -1,5 +1,5 @@
 ---
-- name: Check Windows Update
+- name: vm delete
   hosts: "{{ list_host }}"
   gather_facts: False
 
