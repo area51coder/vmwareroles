@@ -1,0 +1,9 @@
+---
+- name: Check Windows Update
+  hosts: "{{ list_host }}"
+  gather_facts: False
+
+  tasks:
+  - name: vm delete
+    include_role:
+      name: vmdelete
