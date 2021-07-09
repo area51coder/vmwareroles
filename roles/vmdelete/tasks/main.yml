@@ -5,8 +5,7 @@
 
 #  tasks:
   - name: Delete Vms
-    local_action:
-      module: vmware_guest
+    vmware_guest:
       hostname: "{{ list_host }}"
       user: "{{ vcenter_user }}"
       password: "{{ vcenter_password }}"
